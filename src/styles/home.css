@@ -1,6 +1,7 @@
 .home-background {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-page {

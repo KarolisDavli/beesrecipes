@@ -1,8 +1,13 @@
+.btn-block {
+  padding-top: 2rem;
+}
+
 .btn {
   padding: 1rem 2rem;
   font-weight: 600;
   border-radius: 0.5rem;
   border: 2px solid #ecc889;
+  margin-right: 2rem;
 }
 
 .primary {

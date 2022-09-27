@@ -5,7 +5,7 @@ const renderHome = () => {
   const homeDiv = document.createElement("div");
   const bgContainer = document.createElement("div");
   const left = document.createElement("div");
-  const heading = document.createElement("h1");
+  const heading1 = document.createElement("h1");
   const text = document.createElement("p");
   const image = document.createElement("img");
 
@@ -14,11 +14,11 @@ const renderHome = () => {
   bgContainer.classList.add("home-background");
   homeDiv.classList.add("home-page");
   homeDiv.classList.add("container");
-  heading.textContent = "Food from the Heart to the Heart";
+  heading1.textContent = "Food from the Heart to the Heart";
   text.textContent =
     "Taking our love for food, mixing it up with best ingredients and serving it to you";
 
-  left.append(heading, text, buttonBlock());
+  left.append(heading1, text, buttonBlock());
   homeDiv.append(left, image);
   bgContainer.append(homeDiv);
 
