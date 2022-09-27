@@ -1,12 +1,10 @@
 import "./styles/styles.css";
+import "./styles/reset.css";
+import "./styles/nav.css";
+import "./styles/buttons.css";
+import "./styles/home.css";
 import printMe from "./print.js";
+import loadPage from "./loadPage.js";
 
-const test = (() => {
-  const page = document.querySelector("#content");
-  const msg = document.createElement("p");
-  const button = document.createElement("button");
-  button.textContent = "Print me";
-  button.addEventListener("click", printMe);
-  msg.textContent = "Webpack loads";
-  page.append(msg, button);
-})();
+//Render page
+loadPage();

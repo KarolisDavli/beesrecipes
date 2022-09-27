@@ -1,0 +1,15 @@
+.btn {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid #ecc889;
+}
+
+.primary {
+  background-color: #ecc889;
+  color: white;
+}
+
+.secondary {
+  background-color: transparent;
+}

@@ -1,0 +1,14 @@
+.home-background {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+
+.left-content {
+  padding-right: 50px;
+}
