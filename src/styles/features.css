@@ -1,3 +1,21 @@
 .feature-background {
   background-color: #86b9c5;
+  height: 350px;
+  padding: 3.5rem;
+  color: #fff;
+}
+
+.feature-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 135px;
+  height: 80px;
 }

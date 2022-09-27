@@ -5,6 +5,7 @@ import cauliflower from "./img/cauliflower.svg";
 const features = () => {
   const featureBlock = document.createElement("div");
   featureBlock.classList.add("feature-block");
+  featureBlock.classList.add("container");
   const featureBackground = document.createElement("div");
   featureBackground.classList.add("feature-background");
   const heading2 = document.createElement("h2");
@@ -28,8 +29,8 @@ const features = () => {
     featureItemContainer.append(featureItemImage, featureItemText);
     featureBlock.append(featureItemContainer);
   });
-
-  featureBackground.append(heading2, featureBlock);
+  featureBlock.prepend(heading2);
+  featureBackground.append(featureBlock);
 
   return featureBackground;
 };
