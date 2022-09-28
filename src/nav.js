@@ -1,4 +1,8 @@
 import logo from "./img/logo.svg";
+import renderMenu from "./menu.js";
+import {loadPage, page} from "./loadPage";
+import clearContent from "./clearContent";
+import renderHome from "./home";
 
 const renderNav = () => {
   const nav = document.createElement("nav");
@@ -11,6 +15,16 @@ const renderNav = () => {
   const navLinkContact = document.createElement("li");
   const navLinkAbout = document.createElement("li");
 
+  logoLink.addEventListener("click", () => {
+    clearContent();
+    renderHome();
+  });
+
+  navLinkMenu.addEventListener("click", () => {
+    clearContent();
+    renderMenu();
+  });
+
   logoLink.append(logoImage);
   menuItems.append(navLinkMenu, navLinkContact, navLinkAbout);
 
@@ -20,7 +34,12 @@ const renderNav = () => {
 
   nav.append(logoLink, menuItems);
 
-  return nav;
+  return {
+    nav,
+    navLinkMenu,
+    navLinkContact,
+    navLinkAbout,
+  };
 };
 
 export default renderNav;
